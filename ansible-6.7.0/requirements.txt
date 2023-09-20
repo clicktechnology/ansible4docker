@@ -1,0 +1,11 @@
+# Versioned packages
+ansible==6.7.0
+ansible-core==2.13.11
+ansible-lint==6.13.1
+awscli==1.29.40
+aws-parallelcluster==3.7.0
+boto==2.49.0
+boto3==1.28.40
+rich==13.5.2
+wheel
+yamllint==1.32.0
