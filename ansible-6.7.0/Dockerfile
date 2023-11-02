@@ -13,11 +13,12 @@ RUN mkdir -p ${ANSIBLE_LOG_PATH} && \
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install  \
     apt-utils=2.2.4 \
-    curl=7.74.0-1.3+deb11u7 \
+    curl \
     git=1:2.30.2-1+deb11u2 \
     python3=3.9.2-3 \
     python3-pip=20.3.4-4+deb11u1 \
-    python-is-python3=3.9.2-1 &&\
+    python-is-python3=3.9.2-1 \
+    nodejs &&\
     apt-get clean &&\
     rm -rf /var/lib/apt/lists/*
 
